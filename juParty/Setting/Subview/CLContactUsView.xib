@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLContactUsView">
+            <connections>
+                <outlet property="LOGOView" destination="rhF-ux-lai" id="l2I-xN-Tw1"/>
+                <outlet property="companyName" destination="9pK-F7-XfM" id="78Y-le-uRh"/>
+                <outlet property="table" destination="Qj9-Qq-VCl" id="VgS-Jq-J5K"/>
+                <outlet property="version" destination="VpH-yu-S6d" id="u2O-hT-Diz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_setting_contactus" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-ux-lai">
+                    <rect key="frame" x="110" y="100" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2hT-6f-aGV"/>
+                        <constraint firstAttribute="width" constant="100" id="UDM-1y-x4q"/>
+                        <constraint firstAttribute="width" secondItem="rhF-ux-lai" secondAttribute="height" multiplier="1:1" id="gTC-iF-6vC"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qj9-Qq-VCl">
+                    <rect key="frame" x="0.0" y="276" width="320" height="292"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="u6Q-Q0-Ge0"/>
+                        <outlet property="delegate" destination="-1" id="2VE-h2-NSu"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聚派" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pK-F7-XfM">
+                    <rect key="frame" x="0.0" y="215" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v.1.0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpH-yu-S6d">
+                    <rect key="frame" x="0.0" y="235" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93337673611111116" green="0.93337673611111116" blue="0.93337673611111116" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qj9-Qq-VCl" secondAttribute="trailing" id="9UL-n7-1SJ"/>
+                <constraint firstAttribute="trailing" secondItem="9pK-F7-XfM" secondAttribute="trailing" id="MFZ-cW-0N8"/>
+                <constraint firstItem="VpH-yu-S6d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qeh-br-iQY"/>
+                <constraint firstItem="VpH-yu-S6d" firstAttribute="top" secondItem="rhF-ux-lai" secondAttribute="bottom" constant="35" id="TfY-5Z-XMe"/>
+                <constraint firstItem="9pK-F7-XfM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U5n-lB-p4W"/>
+                <constraint firstItem="rhF-ux-lai" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="XSr-Ku-nsn"/>
+                <constraint firstAttribute="bottom" secondItem="Qj9-Qq-VCl" secondAttribute="bottom" id="cK2-OI-XT0"/>
+                <constraint firstAttribute="trailing" secondItem="VpH-yu-S6d" secondAttribute="trailing" id="dYC-GJ-Asn"/>
+                <constraint firstItem="9pK-F7-XfM" firstAttribute="top" secondItem="rhF-ux-lai" secondAttribute="bottom" constant="15" id="ebv-Yj-cdb"/>
+                <constraint firstItem="Qj9-Qq-VCl" firstAttribute="top" secondItem="VpH-yu-S6d" secondAttribute="bottom" constant="20" id="fe8-RV-rf6"/>
+                <constraint firstItem="Qj9-Qq-VCl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hAe-xx-T5y"/>
+                <constraint firstAttribute="centerX" secondItem="rhF-ux-lai" secondAttribute="centerX" id="hYF-py-nRs"/>
+            </constraints>
+            <point key="canvasLocation" x="965" y="624"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_setting_contactus" width="180" height="180"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

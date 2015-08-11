@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="JoinUserCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxu-bO-dB3">
+                        <rect key="frame" x="25" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Jun-vM-G2m"/>
+                            <constraint firstAttribute="width" constant="50" id="XpD-Af-ZMQ"/>
+                            <constraint firstAttribute="width" secondItem="uxu-bO-dB3" secondAttribute="height" multiplier="1:1" id="reG-H5-amY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pw-oi-lpH">
+                        <rect key="frame" x="29" y="60" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="1pw-oi-lpH" secondAttribute="centerX" id="1Jz-Af-ese"/>
+                <constraint firstAttribute="centerX" secondItem="uxu-bO-dB3" secondAttribute="centerX" id="5MU-nv-JHo"/>
+                <constraint firstItem="1pw-oi-lpH" firstAttribute="top" secondItem="uxu-bO-dB3" secondAttribute="bottom" id="FfD-Pz-N8R"/>
+                <constraint firstItem="uxu-bO-dB3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="cmp-MC-ys9"/>
+            </constraints>
+            <connections>
+                <outlet property="nickLabel" destination="1pw-oi-lpH" id="n32-Ew-tZz"/>
+                <outlet property="userImageView" destination="uxu-bO-dB3" id="YkX-Pk-hLk"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

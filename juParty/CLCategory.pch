@@ -1,0 +1,29 @@
+//
+//  CLCategory.pch
+//  聚派
+//
+//  Created by 伍晨亮 on 15/5/26.
+//  Copyright (c) 2015年 伍晨亮. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#import "UIView+Frame.h"
+#import "UIImage+Image.h"
+#import "UIBarButtonItem+Item.h"
+#define CLKeyWindow [UIApplication sharedApplication].keyWindow
+#define CLIconImage [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[CLAccountTool userinfo].headimgurl]]]
+#define CLUserName [CLAccountTool userinfo].nikename
+
+
+#ifndef ___CLCategory_pch
+#define ___CLCategory_pch
+
+#import "Utils.h"
+#import "Header.h"
+#import "AppConfig.h"
+#import "HttpTool.h"
+#endif

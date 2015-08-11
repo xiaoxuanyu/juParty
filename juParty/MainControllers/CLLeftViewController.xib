@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLLeftViewController">
+            <connections>
+                <outlet property="backgroundView" destination="fdk-qi-VFV" id="Puj-jo-Zgf"/>
+                <outlet property="bgView" destination="i5M-Pr-FkT" id="lEX-02-c7p"/>
+                <outlet property="picImgView" destination="POv-Mo-Jox" id="1rd-Ms-OpF"/>
+                <outlet property="separatorView" destination="VfS-2i-PLu" id="4M0-uK-ygI"/>
+                <outlet property="tableView" destination="2hG-7g-jeu" id="s9K-V0-dCO"/>
+                <outlet property="username" destination="Xt2-Tf-2Bt" id="Wcu-uq-Wr4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="e3s-4p-Zpz"/>
+                <outlet property="viewWidth" destination="pLc-E2-d2T" id="qQB-ri-ip3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-qi-VFV">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="600"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_head" translatesAutoresizingMaskIntoConstraints="NO" id="POv-Mo-Jox">
+                            <rect key="frame" x="50" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="KqA-PV-uiX"/>
+                                <constraint firstAttribute="height" constant="60" id="PJv-n1-KFL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt2-Tf-2Bt">
+                            <rect key="frame" x="0.0" y="100" width="160" height="21"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2hG-7g-jeu">
+                            <rect key="frame" x="0.0" y="150" width="160" height="450"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="tBn-Qc-tXt"/>
+                                <outlet property="delegate" destination="-1" id="GkD-cr-2zY"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-2i-PLu">
+                            <rect key="frame" x="0.0" y="150" width="160" height="1"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xt2-Tf-2Bt" firstAttribute="top" secondItem="POv-Mo-Jox" secondAttribute="bottom" constant="10" id="CCK-9s-cjj"/>
+                        <constraint firstItem="POv-Mo-Jox" firstAttribute="top" secondItem="fdk-qi-VFV" secondAttribute="top" constant="30" id="GPo-vl-teY"/>
+                        <constraint firstAttribute="centerX" secondItem="POv-Mo-Jox" secondAttribute="centerX" id="H77-dZ-jPU"/>
+                        <constraint firstItem="Xt2-Tf-2Bt" firstAttribute="leading" secondItem="fdk-qi-VFV" secondAttribute="leading" id="Trb-h1-bFO"/>
+                        <constraint firstAttribute="height" constant="600" id="fmX-v5-IUZ"/>
+                        <constraint firstAttribute="width" secondItem="Xt2-Tf-2Bt" secondAttribute="width" id="h4U-Sn-vRj"/>
+                        <constraint firstAttribute="width" constant="160" id="pLc-E2-d2T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fdk-qi-VFV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9bW-3I-lPN"/>
+                <constraint firstItem="fdk-qi-VFV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MNB-Kq-ybW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="668" y="535"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_head" width="522" height="364"/>
+    </resources>
+</document>
